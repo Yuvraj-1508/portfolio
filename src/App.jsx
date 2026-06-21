@@ -294,7 +294,7 @@ function Hero() {
 ============================================================ */
 function About() {
   const stats = [
-    { icon: <FiCode size={20} />, label: 'Projects', val: '3+', color: '#3b82f6' },
+    { icon: <FiCode size={20} />, label: 'Projects', val: '2', color: '#3b82f6' },
     { icon: <FiBriefcase size={20} />, label: 'Internship', val: '1', color: '#06b6d4' },
     { icon: <FiAward size={20} />, label: 'AZ-900', val: '✓', color: '#8b5cf6' },
   ]
@@ -305,7 +305,7 @@ function About() {
         <div className="about-grid">
           <motion.div initial={{ opacity: 0, x: -40 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.7 }}>
             <p className="about-bio">Motivated <span className="gradient-text">Computer Science graduate</span> from Surat, Gujarat, passionate about backend development, clean architecture, and the <span className="gradient-text">.NET ecosystem</span>.</p>
-            <p className="about-bio" style={{ marginTop: 16 }}>Currently interning at <strong style={{ color: '#3b82f6' }}>OM Software Pvt. Ltd.</strong> as a .NET Developer Intern, building real-world enterprise applications. CGPA: <strong style={{ color: '#06b6d4' }}>8.4 / 10</strong>.</p>
+            <p className="about-bio" style={{ marginTop: 16 }}>Currently interning at <strong style={{ color: '#3b82f6' }}>OM Software Pvt. Ltd.</strong> as a .NET Developer Intern, building real-world enterprise applications. </p>
             <p className="about-bio" style={{ marginTop: 16 }}>I love writing clean C# code and applying <span className="gradient-text">SOLID, DI, and Repository Pattern</span> principles to create scalable APIs and web apps.</p>
             <div className="about-stats">
               {stats.map((s, i) => (
