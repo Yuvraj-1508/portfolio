@@ -13,13 +13,14 @@ import { FaLinkedinIn, FaMicrosoft, FaDatabase, FaCode, FaCss3Alt } from 'react-
 import { DiVisualstudio } from 'react-icons/di'
 import './index.css'
 import './App.css'
+import resumeUrl from './assets/Yuvraj_Resume.docx?url'
 
 /* ── Icon aliases for react-icons v5 ─────────────────── */
-const SiLinkedin        = FaLinkedinIn
-const SiMicrosoftazure  = FaMicrosoft
+const SiLinkedin = FaLinkedinIn
+const SiMicrosoftazure = FaMicrosoft
 const SiMicrosoftsqlserver = FaDatabase
-const SiCss3            = FaCss3Alt
-const SiVisualstudio    = DiVisualstudio
+const SiCss3 = FaCss3Alt
+const SiVisualstudio = DiVisualstudio
 const SiVisualstudiocode = ({ size, color, ...p }) =>
   <span style={{ fontFamily: 'monospace', fontWeight: 700, fontSize: size ? `${size * 0.9}px` : '0.9em', color: color || 'inherit' }} {...p}>VSC</span>
 const SiCsharp = ({ size, color, ...p }) =>
@@ -198,11 +199,11 @@ function Navbar() {
 /* Cards are placed in a circle: 5 cards at 72° steps, starting at -90° (top) */
 const ORBIT_RADIUS = 115
 const HERO_TECH_CARDS = [
-  { icon: <SiCsharp size={20} color="#06b6d4" />,         label: 'C#',    angleDeg: -90  },
-  { icon: <SiMicrosoftazure size={18} color="#3b82f6" />, label: 'Azure', angleDeg: -18  },
-  { icon: <SiReact size={20} color="#61dafb" />,          label: 'React', angleDeg:  54  },
+  { icon: <SiCsharp size={20} color="#06b6d4" />, label: 'C#', angleDeg: -90 },
+  { icon: <SiMicrosoftazure size={18} color="#3b82f6" />, label: 'Azure', angleDeg: -18 },
+  { icon: <SiReact size={20} color="#61dafb" />, label: 'React', angleDeg: 54 },
   { icon: <SiMicrosoftsqlserver size={18} color="#f59e0b" />, label: 'SQL', angleDeg: 126 },
-  { icon: <SiGit size={18} color="#f97316" />,            label: 'Git',   angleDeg: 198  },
+  { icon: <SiGit size={18} color="#f97316" />, label: 'Git', angleDeg: 198 },
 ]
 
 function Hero() {
@@ -228,7 +229,7 @@ function Hero() {
           </motion.p>
           <motion.div className="hero-cta" initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.0 }}>
             <button className="btn-primary" onClick={goProjects}><FiCode size={17} /> View My Work</button>
-            <a className="btn-outline" href="/resume.pdf" download><FiDownload size={17} /> Download Resume</a>
+            <a className="btn-outline" href={resumeUrl} download="Yuvraj_Resume.docx"><FiDownload size={17} /> Download Resume</a>
           </motion.div>
           <motion.div className="hero-socials" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.2 }}>
             {[
@@ -329,7 +330,7 @@ function About() {
   public string Name   = "Yuvraj Rotliwala";
   public string Role   = ".NET Developer";
   public string City   = "Surat, Gujarat";
-  public float  CGPA   = 8.4f;
+  public float  CGPA   = 7.73f;
 
   public string[] Stack = {
     "C#", "ASP.NET MVC",
@@ -554,16 +555,7 @@ const PROJECTS = [
     icons: [<SiCsharp size={14} />, <SiMicrosoftsqlserver size={14} />],
   },
   {
-    num: '02', color: '#06b6d4',
-    title: 'DGKPS CRM System',
-    stack: 'ASP.NET Web Service · C# · SQL Server · AJAX · jQuery',
-    duration: 'Dec 2024 – Jun 2026',
-    points: ['CRM for Patidar Samaj member data with multi-role access', 'Async AJAX operations for seamless UI interactions', 'Full CRUD with a responsive and user-friendly interface'],
-    tags: ['ASP.NET', 'AJAX', 'jQuery', 'SQL Server'],
-    icons: [<SiDotnet size={14} />, <SiJquery size={14} />],
-  },
-  {
-    num: '03', color: '#8b5cf6',
+    num: '02', color: '#8b5cf6',
     title: 'E-Commerce Product Catalog',
     stack: 'ASP.NET MVC · C# · Bootstrap · SQL Server',
     duration: 'Jul 2024 – Sep 2024',
@@ -665,8 +657,8 @@ function Education() {
             </div>
             <div>
               <h3 className="edu-degree">Bachelor of Computer Applications (BCA)</h3>
-              <p className="edu-uni gradient-text">Savitribai Phule Pune University · Surat Campus</p>
-              <p className="edu-meta">2023 – 2026 &nbsp;|&nbsp; CGPA: <strong style={{ color: '#3b82f6' }}>8.4 / 10</strong></p>
+              <p className="edu-uni gradient-text">Veer Narmad South Gujarat University · Surat Campus</p>
+              <p className="edu-meta">2023 – 2026 &nbsp;|&nbsp; CGPA: <strong style={{ color: '#3b82f6' }}>7.73 / 10</strong></p>
             </div>
           </div>
           <div className="edu-divider" />
@@ -823,8 +815,7 @@ function Footer() {
     <footer className="footer">
       <div className="container footer-inner">
         <p className="footer-copy">
-          © 2025 <span className="gradient-text">Yuvraj Rotliwala</span> &nbsp;·&nbsp; Built with{' '}
-          <SiReact style={{ display: 'inline', verticalAlign: 'middle', color: '#06b6d4', marginLeft: 4, marginRight: 2 }} size={14} /> React
+          © 2026 <span className="gradient-text">Yuvraj Rotliwala</span>
         </p>
         <div className="footer-socials">
           {[
