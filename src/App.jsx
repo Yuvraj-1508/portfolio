@@ -769,7 +769,7 @@ function Contact() {
             {[
               { icon: <FiMail size={20} />, label: 'Email', value: 'yuvrajrotliwala@email.com', href: 'mailto:yuvrajrotliwala@email.com', color: '#3b82f6' },
               { icon: <SiGithub size={20} />, label: 'GitHub', value: 'github.com/Yuvraj-1508', href: 'https://github.com/Yuvraj-1508', color: '#06b6d4' },
-              { icon: <SiLinkedin size={20} />, label: 'LinkedIn', value: 'linkedin.com/in/yuvraj_rotliwala', href: 'https://linkedin.com/in/yuvraj_rotliwala', color: '#8b5cf6' },
+              { icon: <SiLinkedin size={20} />, label: 'LinkedIn', value: 'linkedin.com/in/yuvraj_rotliwala', href: 'https://www.linkedin.com/in/yuvraj-rotliwala/', color: '#8b5cf6' },
             ].map(item => (
               <motion.a key={item.label} href={item.href} target="_blank" rel="noopener noreferrer" className="contact-link" whileHover={{ x: 6 }}>
                 <span style={{ color: item.color, display: 'flex' }}>{item.icon}</span>
@@ -820,7 +820,7 @@ function Footer() {
         <div className="footer-socials">
           {[
             { href: 'https://github.com/Yuvraj-1508', icon: <SiGithub size={18} />, label: 'GitHub' },
-            { href: 'https://linkedin.com/in/yuvraj_rotliwala', icon: <SiLinkedin size={18} />, label: 'LinkedIn' },
+            { href: 'https://www.linkedin.com/in/yuvraj-rotliwala/', icon: <SiLinkedin size={18} />, label: 'LinkedIn' },
             { href: 'mailto:yuvrajrotliwala@email.com', icon: <FiMail size={18} />, label: 'Email' },
           ].map(s => <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer" className="social-icon" aria-label={s.label}>{s.icon}</a>)}
         </div>
